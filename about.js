@@ -20,8 +20,13 @@ cat.addEventListener('mouseover', () => {
 	alert('you are stronger than a bulldozer!');
   });
 
-const Restaurants = ["January", "February", "March", "April", "May", "June", "July"];
 
+
+const RestaurantsRecommendationBtn=document.querySelector('#Restaurants')
+RestaurantsRecommendationBtn.addEventListener('click',() => {
+		alert ('Capitol Cafe Mpls')
+	});
+RestaurantsRecommendationBtn= ["Capitol Cafe Mpls", "Birchwood Cafe", "Gandhi Mahal"];
 const random = Math.floor(Math.random() * Restaurants.length);
-console.log(random, months[random]);
+console.log(random, Restaurants[random]);
 
